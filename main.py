@@ -1,6 +1,8 @@
 import time
 
 class Livro:
+    """_summary_
+    """
     def __init__(self, titulo, autor, isbn, disponivel=True):
         self.titulo = titulo
         self.autor = autor
@@ -15,6 +17,8 @@ class Livro:
         return f"[{disponibilidade}] | {self.titulo} - {self.autor} ({self.isbn})"
 
 class Cliente:
+    """_summary_
+    """
     def __init__(self, nome, telefone, email, status=True, motivo="OK", nro_registro=None):
         self.nro_registro = nro_registro
         self.nome = nome
@@ -329,3 +333,5 @@ while True:
 
     else:
         print("Opção inválida.")
+        """_summary_
+        """
