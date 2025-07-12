@@ -47,7 +47,7 @@ class Transacoes:
             tipo_transacao = "Devolução"
 
         # Formata o timestamp para uma data/hora legível
-        data_formatada = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(self.data))
+        data_formatada = time.strftime("%d/%m/%Y %H:%M:%S", time.localtime(self.data))
 
         return (f"Data: {data_formatada} | Tipo: {tipo_transacao} | "
                 f"Cliente Reg: {self.cliente_nro_registro} | ISBN: {self.isbn}")
